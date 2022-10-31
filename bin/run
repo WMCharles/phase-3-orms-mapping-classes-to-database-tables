@@ -1,7 +1,19 @@
 #!/usr/bin/env ruby 
 
-require 'pry'
+# require 'pry'
 require_relative '../config/environment'
 
-binding.pry
-"pls"
+Song.create_table
+# binding.pry
+# "pls"
+gold_digger = Song.new(name: "Gold Digger", album: "Late Registration")
+hello = Song.new(name: "Hello", album: "25")
+ninety_nine_problems = Song.new(name: "99 Problems", album: "The Black Album")
+# ninety_nine_problems.save
+# p gold_digger.name
+# p gold_digger.album 
+# gold_digger.save
+# hello.save 
+song = Song.create(name: "Hello", album: "25")
+p song.name
+p song.id
